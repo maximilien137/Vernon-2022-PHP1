@@ -151,3 +151,47 @@ if (isset($var)) {
 }*/
 
 //++, --
+
+for($i = 0 ; $i <= 100 ; $i++) {
+    echo "<li>$i</li>";
+
+}
+
+
+
+$resultat = "<ul>";
+for($i = 0 ; $i <= 100 ; $i++) {
+    $resultat .= "<li>";
+    $resultat .= $i;
+    $resultat .= "</li>";
+}
+$resultat .= "<ul>";
+
+echo $resultat;
+
+/*
+
+if($count != 7 )
+
+*/
+$compteur = 0;
+$i = -17627 ;
+$resultat = "<ul>";
+
+
+while ($i <= 14256) {
+
+    if ($i % 7 === 0) {
+    $resultat .= "<li>";
+    $resultat .= $i;
+    $resultat .= "</li>";
+    $compteur++;
+    }
+}
+$resultat .= "<ul>";
+$resultat .= "<p>Il y a $compteur resultats</p>";
+
+
+
+echo $resultat;
+
